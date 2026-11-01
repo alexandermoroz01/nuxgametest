@@ -1,0 +1,7 @@
+services:
+    tests:
+        build: .
+        env_file: environment/.env
+        ipc: host
+        volumes:
+            - ./playwright-report:/app/playwright-report
